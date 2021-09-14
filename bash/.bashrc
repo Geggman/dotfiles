@@ -1,11 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-
 # The .zshrc of Guy Levitzky
 # Github: GuyLevitzky
 
@@ -17,26 +9,16 @@ fi
 
 
 
-# ***********
-# * Sources *
-# ***********
 
-# Best Theme
-
-# Syntax Highlighting For Zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.sh
-
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
 # ***********
 # * Aliases *
 # ***********
 
-
 # Git bare repo for my dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-
-# Vim is Neovim
-alias vim='nvim'
 
 # Navigation
 alias ..='cd ..'
@@ -44,6 +26,12 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
+
+# Navigate to Projects folder
+alias Projects='cd ~/Projects/'
+
+# vim
+alias vim=nvim
 
 # Pacman and Yay
 alias pacs='sudo pacman -S'
@@ -84,7 +72,15 @@ alias yta-m4a='youtube-dl --extract-audio --audio-format m4a'
 # Switch between shells
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
+# Source .zshrc or .bashrc
+
+alias szsh="source /home/guy/.zshrc"
+alias sbash="source /home/guy/.bashrc"
+
+# List all my gpg keys
+alias gpglist="gpg --list-secret-keys --keyid-format LONG"
 
 
 # ***************
@@ -119,8 +115,10 @@ ex ()
   fi
 }
 
-
 # fetch-master 6000
 #fm6000 -r -c magenta
 
 
+# Prompt
+PS1='\W \$ '
+eval "$(starship init bash)"

@@ -13,5 +13,4 @@ set nowrap
 set incsearch
 set termguicolors
 set mouse=a
-
-
+set guicursor=
