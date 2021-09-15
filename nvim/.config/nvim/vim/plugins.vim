@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/autoload')
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}   
 Plug 'preservim/nerdtree'
 Plug 'nvim-lua/completion-nvim'
 Plug 'neovim/nvim-lspconfig'

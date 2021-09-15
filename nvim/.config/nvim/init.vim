@@ -4,7 +4,7 @@ source $HOME/.config/nvim/vim/settings.vim " Settings
 
 "let ayucolor='mirage'
 colorscheme gruvbox
-highlight Nomral guibg=none
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
 " Plugins
 luafile $HOME/.config/nvim/plug-config/lspinstall.lua
@@ -12,4 +12,6 @@ source $HOME/.config/nvim/plug-config/lspconfig.vim
 source $HOME/.config/nvim/plug-config/telescope.nvim
 source $HOME/.config/nvim/plug-config/uwu.vim
 source $HOME/.config/nvim/plug-config/completion.vim
+
+highlight Nomral guibg=none
 
