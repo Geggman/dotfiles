@@ -121,7 +121,6 @@ ex ()
 
 # Prompt
 PS1='\W \$ '
-eval "$(starship init bash)"
 
 
 # Scripts related things
