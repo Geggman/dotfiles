@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/autoload')
 
-Plug 'ThePrimeagen/harpoon'
+Plug 'connorholyday/vim-snazzy'
 Plug 'vim-conf-live/vimconflive2021-colorscheme'
 Plug 'flazz/vim-colorschemes'
 Plug 'chriskempson/base16-vim'
@@ -24,6 +24,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'ThePrimeagen/harpoon'
 Plug 'mhinz/vim-startify'
 
 call plug#end()

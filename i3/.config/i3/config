@@ -9,7 +9,7 @@
 #
 # i3 config file (v4)
 #
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#gruvbox  Please see https://i3wm.org/docs/userguide.html for a complete reference!
 default_border pixel 1
 default_floating_border pixel 1
 set $mod Mod4
@@ -177,6 +177,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+workspace $workspace1 output DVI-D-0
+workspace $workspace2 output HDMI-0
+
 # ****************
 # * BAR SETTINGS *
 # ****************
@@ -214,7 +217,7 @@ exec_always ~/.scritps/pastart.sh
 exec_always nitrogen --restore
 exec_always picom -f
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-bindsym --release $mod+p exec --no-startup-id "/home/guy/.passmenu/passmenu.sh"
+bindsym --release $mod+p exec passmenu
 for_window [class=".*"] border pixel 1
 
 # ************

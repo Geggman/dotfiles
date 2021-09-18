@@ -1,5 +1,5 @@
-colorscheme gruvbox 
-highlight Normal guibg=none
+colorscheme snazzy 
+"highlight Normal guibg=none
 
 let base16colorspace=256
 
