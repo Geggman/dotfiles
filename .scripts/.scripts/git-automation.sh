@@ -10,4 +10,3 @@ git add .
 git commit -m "$cmessage"
 git push origin $branch
 
-printf "\nDone successfullly!"
