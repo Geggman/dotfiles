@@ -82,9 +82,8 @@ alias sbash="source /home/guy/.bashrc"
 # List all my gpg keys
 alias gpglist="gpg --list-secret-keys --keyid-format LONG"
 
-# Cheat sheet
-alias cht.sh="curl cheat.sh/"
-
+# git-automation
+alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
 
 # ***************
 # * Other Stuff *
@@ -126,6 +125,4 @@ ex ()
 PS1='\W \$ '
 
 
-# Scripts related things
-export dotfiles="/home/guy/dotfiles/"
 

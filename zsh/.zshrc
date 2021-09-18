@@ -85,7 +85,8 @@ alias yta-m4a='youtube-dl --extract-audio --audio-format m4a'
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 
-
+# Git automation script
+alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
 
 # ***************
 # * Other Stuff *
