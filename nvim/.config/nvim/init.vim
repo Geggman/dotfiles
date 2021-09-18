@@ -8,6 +8,7 @@ source $HOME/.config/nvim/vim/settings.vim " Settings
 " Plugins
 luafile $HOME/.config/nvim/plug-config/lspinstall.lua
 luafile $HOME/.config/nvim/plug-config/compeconfig.lua
+luafile $HOME/.config/nvim/plug-config/harpoon.lua
 source $HOME/.config/nvim/plug-config/lspconfig.vim
 source $HOME/.config/nvim/plug-config/telescope.nvim
 source $HOME/.config/nvim/plug-config/uwu.vim

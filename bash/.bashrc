@@ -82,6 +82,9 @@ alias sbash="source /home/guy/.bashrc"
 # List all my gpg keys
 alias gpglist="gpg --list-secret-keys --keyid-format LONG"
 
+# Cheat sheet
+alias cht.sh="curl cheat.sh/"
+
 
 # ***************
 # * Other Stuff *

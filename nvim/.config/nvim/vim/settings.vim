@@ -1,4 +1,4 @@
-colorscheme gruvbox
+colorscheme OceanicNext 
 highlight Normal guibg=none
 
 let base16colorspace=256

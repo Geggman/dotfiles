@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/autoload')
 
+Plug 'ThePrimeagen/harpoon'
 Plug 'vim-conf-live/vimconflive2021-colorscheme'
 Plug 'flazz/vim-colorschemes'
 Plug 'chriskempson/base16-vim'
