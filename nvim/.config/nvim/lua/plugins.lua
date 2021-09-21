@@ -4,7 +4,13 @@ require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'challenger-deep-theme/vim', as = 'challenger-deep'}  
   use 'hoob3rt/lualine.nvim'
+  use 'kyazdani42/nvim-web-devicons'
   use 'dracula/vim'
+  use 'drewtempelmeyer/palenight.vim'
+  use 'ayu-theme/ayu-vim'
+
+  -- COLORBUDDY
+  use 'tjdevries/colorbuddy.nvim'
 
   -- TREESITTER
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -25,6 +31,7 @@ require('packer').startup(function()
   -- OTHER
   use 'mhinz/vim-startify' 
   use 'jiangmiao/auto-pairs'
+  use 'tjdevries/express_line.nvim'
   
 	
 end)

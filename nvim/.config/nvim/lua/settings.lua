@@ -17,5 +17,7 @@ vim.o.incsearch = true
 vim.o.wrap = false
 vim.o.scrolloff = 8
 
-require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}
+vim.cmd('let ayucolor = "mirage"')
+vim.cmd("color ayu")
+
 
