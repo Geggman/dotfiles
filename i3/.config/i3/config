@@ -206,16 +206,12 @@ bar {
 }
 
 
-gaps inner 10
-gaps outer 10
-
 # *************
 # * AUTOSTART *
 # *************
 
 exec_always ~/.scritps/pastart.sh
 exec_always nitrogen --restore
-exec_always picom -f
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym --release $mod+p exec passmenu
 for_window [class=".*"] border pixel 1
