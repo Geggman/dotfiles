@@ -1,3 +1,4 @@
+vim.g.mapleader = ' '
 require('plugins') -- Plugins
 require('settings') -- Settings
 require('mappings') -- Key mappings
@@ -12,5 +13,4 @@ require('plug-config/telescope')
 
 
 vim.g.colors_name = 'challenger_deep'
-vim.g.mapleader = ' '
 

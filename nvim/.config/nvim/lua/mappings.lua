@@ -20,3 +20,7 @@ keymap('i', '<C-k>', '<esc>:m .-2<cr>==', {})
 keymap('n', '<leader>j', ':m .+1<cr>==', {})
 keymap('n', '<leader>k', ':m .-2<cr>==', {})
 keymap('n', '<leader>h', '<cmd>lua vim.lsp.buf.rename()<CR>', {})
+
+
+-- Edit the vim files
+keymap('n', '<leader>dot', ':lua require("plug-config.telescope").search_dotfiles()<cr>', {})
