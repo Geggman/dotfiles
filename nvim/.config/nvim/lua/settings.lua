@@ -1,6 +1,8 @@
 -- vim.o - global options
 -- vim.wo - local to window
--- vim.bo - local to buffer
+vim.g.mapleader = ' '
+
+
 
 vim.o.expandtab = true
 vim.o.smartindent = true
@@ -16,8 +18,7 @@ vim.o.mouse = 'a'
 vim.o.incsearch = true
 vim.o.wrap = false
 vim.o.scrolloff = 8
+vim.o.syntax = 'on'
 
-vim.cmd('let ayucolor = "mirage"')
-vim.cmd("color ayu")
 
 

@@ -1,7 +1,12 @@
 require('packer').startup(function()
 
+  use 'wbthomason/packer.nvim' -- Packer.nvim 
+
   -- THEMES
-  use 'wbthomason/packer.nvim'
+  use 'gruvbox-community/gruvbox'
+  use 'navarasu/onedark.nvim'
+  use 'mhartington/oceanic-next'
+  use 'tomasr/molokai'
   use {'challenger-deep-theme/vim', as = 'challenger-deep'}  
   use 'hoob3rt/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
@@ -32,6 +37,8 @@ require('packer').startup(function()
   use 'mhinz/vim-startify' 
   use 'jiangmiao/auto-pairs'
   use 'tjdevries/express_line.nvim'
+  use 'tjdevries/cyclist.vim'
+  
   
 	
 end)
