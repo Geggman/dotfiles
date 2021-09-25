@@ -2,23 +2,23 @@
 -- vim.wo - local to window
 vim.g.mapleader = ' '
 
+local set = vim.o
 
-
-vim.o.expandtab = true
-vim.o.smartindent = true
-vim.o.shiftwidth = 2
-vim.o.softtabstop = 2
-vim.o.termguicolors = true
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.swapfile = false
-vim.o.hidden = true
-vim.o.hlsearch = false
-vim.o.mouse = 'a'
-vim.o.incsearch = true
-vim.o.wrap = false
-vim.o.scrolloff = 8
-vim.o.syntax = 'on'
+set.expandtab = true
+set.smartindent = true
+set.shiftwidth = 2
+set.softtabstop = 2
+set.termguicolors = true
+set.number = true
+set.relativenumber = true
+set.swapfile = false
+set.hidden = true
+set.hlsearch = false
+set.mouse = 'a'
+set.incsearch = true
+set.wrap = false
+set.scrolloff = 8
+set.syntax = 'on'
 
 
 

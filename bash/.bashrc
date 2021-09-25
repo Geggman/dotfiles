@@ -85,6 +85,9 @@ alias gpglist="gpg --list-secret-keys --keyid-format LONG"
 # git-automation
 alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
 
+# Monitor-Fix (NEED TO CHANGE IT LATER TO SUPPORT 3 MONITORS)
+alias fix-displays='xrandr --output DVI-D-0 --primary --right-of HDMI-0'
+
 # ***************
 # * Other Stuff *
 # ***************

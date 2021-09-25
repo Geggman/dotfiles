@@ -1,14 +1,15 @@
 require('packer').startup(function()
 
-  use 'wbthomason/packer.nvim' -- Packer.nvim 
+  use 'wbthomason/packer.nvim' -- Packer.nvim
 
   -- THEMES
+  use 'Th3Whit3Wolf/onebuddy'
+  use 'tjdevries/gruvbuddy.nvim'
   use 'gruvbox-community/gruvbox'
   use 'navarasu/onedark.nvim'
   use 'mhartington/oceanic-next'
   use 'tomasr/molokai'
-  use {'challenger-deep-theme/vim', as = 'challenger-deep'}  
-  use 'hoob3rt/lualine.nvim'
+  use {'challenger-deep-theme/vim', as = 'challenger-deep'}
   use 'kyazdani42/nvim-web-devicons'
   use 'dracula/vim'
   use 'drewtempelmeyer/palenight.vim'
@@ -34,11 +35,10 @@ require('packer').startup(function()
   use 'kabouzeid/nvim-lspinstall'
 
   -- OTHER
-  use 'mhinz/vim-startify' 
+  use 'mhinz/vim-startify'
   use 'jiangmiao/auto-pairs'
-  use 'tjdevries/express_line.nvim'
+  use 'hoob3rt/lualine.nvim'
   use 'tjdevries/cyclist.vim'
-  
-  
-	
+  use 'tjdevries/express_line.nvim'
+
 end)

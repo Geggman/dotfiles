@@ -6,15 +6,6 @@ require('telescope').setup{
     prompt_prefix ="> ",
     color_devicons = true
   },
-  pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
-  },
   extensions = {
     fzy_native = {
       override_generic_sorter = false,
@@ -23,20 +14,34 @@ require('telescope').setup{
   }
 }
 
+
+-- Sweet keymaps
 setkeymap('n', '<C-p>', '<cmd>lua require("telescope.builtin").find_files()<cr>', {})
 setkeymap('n', '<leader>gf', '<cmd>lua require("telescope.builtin").git_files()<cr>', {})
 setkeymap('n', '<leader>fb', '<cmd>lua require("telescope.builtin").file_browser()<cr>', {})
+setkeymap('n', '<leader>lg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', {})
 require('telescope').load_extension('fzy_native')
 
 
+
+-- List the dotfiles
 local M = {}
-M.search_dotfiles = function()
+M.search_vimfiles = function()
   require("telescope.builtin").find_files({
-    prompt_title = "< Vim Dotfiles >",
+    prompt_title = "< Vim Files >",
     cwd = "~/dotfiles/nvim/.config/nvim/",
   })
 end
 
+M.search_dotfiles = function()
+  require("telescope.builtin").git_files({
+    prompt_title = "< Dotfiles >",
+    cwd = "~/dotfiles/",
+  })
+end
+
 return M
+
+
 
 
