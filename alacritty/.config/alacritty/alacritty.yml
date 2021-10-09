@@ -60,7 +60,7 @@ font:
     family: jetbrains mono
     style: regular
 
-  size: 15.0
+  size: 13.0
   offset:
     x: 0
     y: 1
