@@ -6,7 +6,8 @@ require('plug-config.lspinstall')
 require('plug-config.lspconfig')
 
 -- Colorscheme Shit
-require('colorbuddy').colorscheme('gruvbuddy')
+--require('colorbuddy').colorscheme('gruvbuddy')
+vim.cmd("colorscheme gruvbox")
 
 -- Plugin Configuration
 require('plug-config.compeconfig')

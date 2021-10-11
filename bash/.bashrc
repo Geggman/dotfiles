@@ -83,10 +83,13 @@ alias sbash="source /home/guy/.bashrc"
 alias gpglist="gpg --list-secret-keys --keyid-format LONG"
 
 # git-automation
-alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
+alias gitauto="~/.dotfiles/.scripts/.scripts/git-automation.sh"
 
 # Monitor-Fix (NEED TO CHANGE IT LATER TO SUPPORT 3 MONITORS)
-alias fix-displays='xrandr --output DVI-D-0 --primary --right-of HDMI-0'
+alias fix-displays='xrandr --output DVI-D-1 --primary --right-of HDMI-1'
+
+# Start tmux with unicode support 
+alias tmux="tmux -u"
 
 # ***************
 # * Other Stuff *
@@ -126,6 +129,5 @@ ex ()
 
 # Prompt
 PS1='\W \$ '
-
-
+eval "$(starship init bash)"
 

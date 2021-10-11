@@ -97,6 +97,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/gruvbox"
   },
+  ["gruvbuddy.nvim"] = {
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/gruvbuddy.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/harpoon"
@@ -108,6 +112,10 @@ _G.packer_plugins = {
   molokai = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/molokai"
+  },
+  ["nebulous.nvim"] = {
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/nebulous.nvim"
   },
   ["nvim-compe"] = {
     loaded = true,

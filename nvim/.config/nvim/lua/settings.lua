@@ -1,5 +1,6 @@
 -- vim.o - global options
 -- vim.wo - local to window
+
 vim.g.mapleader = ' '
 
 local set = vim.o
@@ -19,6 +20,5 @@ set.incsearch = true
 set.wrap = false
 set.scrolloff = 8
 set.syntax = 'on'
-
-
+vim.cmd(":set clipboard=unnamedplus")
 
