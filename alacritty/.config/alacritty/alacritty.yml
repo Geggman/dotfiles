@@ -57,15 +57,15 @@ colors:
 
 font:
   normal:
-    family: jetbrains mono
+    family: ubuntu mono
     style: regular
 
-  size: 13.0
+  size: 15.0
   offset:
     x: 0
     y: 1
 
-background_opacity: 0.9
+window_opacity: 0.9
 cursor:
   style:
     blinking: Never
