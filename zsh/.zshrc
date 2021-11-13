@@ -23,14 +23,9 @@ fi
 
 # Best Theme
 
-# Syntax Highlighting For Zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.sh
-
-
 # ***********
 # * Aliases *
 # ***********
-
 
 # Git bare repo for my dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'

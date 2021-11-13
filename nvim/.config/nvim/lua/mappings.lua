@@ -9,8 +9,15 @@ keymap('n', 'n', 'nzzzv', {})
 keymap('n', 'N', 'Nzzzv', {})
 keymap('n', 'J', 'mzJ`z', {})
 
--- Fix Y
-keymap('n', 'Y', 'y$', {})
+-- Fix copying + pasting
+keymap('n', 'Y', '"y$', {})
+keymap('n', 'y', '"+y', {})
+keymap('n', 'p', '"+p', {})
+keymap('n', 'p', '"+P', {})
+keymap('v', 'p', '"+p', {})
+keymap('v', 'p', '"+P', {})
+
+
 
 -- Moving Text
 keymap('v', 'J', ":m '>+1<cr>gv=gv", {})

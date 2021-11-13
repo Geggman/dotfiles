@@ -86,7 +86,7 @@ alias gpglist="gpg --list-secret-keys --keyid-format LONG"
 alias gitauto="~/.dotfiles/.scripts/.scripts/git-automation.sh"
 
 # Monitor-Fix (NEED TO CHANGE IT LATER TO SUPPORT 3 MONITORS)
-alias fix-displays='xrandr --output DVI-D-1 --primary --right-of HDMI-1'
+alias fix-displays='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0'
 
 # Start tmux with unicode support 
 alias tmux="tmux -u"
