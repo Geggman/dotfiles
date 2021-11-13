@@ -1,3 +1,3 @@
-# dotfiles
-These dotfiles are using GNU stow
+# Dotfiles
 
+```TO INSTALL USE install.sh or i will hurt u```

@@ -14,6 +14,7 @@ set.number = true
 set.relativenumber = true
 set.swapfile = false
 set.hidden = true
+set.guicursor = ""
 set.hlsearch = false
 set.mouse = 'a'
 set.incsearch = true
