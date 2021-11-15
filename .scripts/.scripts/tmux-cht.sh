@@ -2,7 +2,7 @@
 
 # Written by ThePrimeagen at https://github.com/ThePrimeagen/
 
-selected=`cat ~/.tmux-cht-languages ~/.tmux-cht-command | fzf`
+selected=`cat ~/.config/tmux/tmux-cht-languages ~/.config/tmux/tmux-cht-command | fzf`
 if [[ -z $selected ]]; then
     exit 0
 fi

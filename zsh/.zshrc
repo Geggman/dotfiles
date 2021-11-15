@@ -81,6 +81,17 @@ alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 # Git automation script
 alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
 
+# Fix the displays
+alias fix-displays='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0'
+
+# python3? more like p3
+alias p3='python3'
+
+alias cat="bat"
+
+alias ko="bash ~/.scripts/kickoff.sh"
+
+
 # ***************
 # * Other Stuff *
 # ***************
