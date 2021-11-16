@@ -28,6 +28,10 @@ source $ZSH/oh-my-zsh.sh
 # Git bare repo for my dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 
+# tmux aliases
+alias tmls="tmux list-sessions"
+alias tmlk="tmux kill-server"
+
 # Vim is Neovim
 alias vim='nvim'
 
@@ -87,9 +91,12 @@ alias fix-displays='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --rig
 # python3? more like p3
 alias p3='python3'
 
+# bat cool
 alias cat="bat"
 
+# kickoff.sh
 alias ko="bash ~/.scripts/kickoff.sh"
+
 
 
 # ***************

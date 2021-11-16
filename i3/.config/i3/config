@@ -22,6 +22,9 @@ set $bg-color "#3c3836"
 # Run i3lock 
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
 
+bindsym $mod+shift+f exec 'xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0'
+
+
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left

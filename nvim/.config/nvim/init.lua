@@ -2,8 +2,8 @@ require('plugins') -- Plugins
 require('settings') -- Settings
 require('mappings') -- Key mappings
 
-require('plug-config.lspinstall')
 require('plug-config.lspconfig')
+require('plug-config.lspinstall')
 
 -- Colorscheme Shit
 --require('colorbuddy').colorscheme('gruvbuddy')
