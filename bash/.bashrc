@@ -52,8 +52,8 @@ alias fgrep='fgrep --color=auto'
 
 # Git
 alias addup='git add -u'
-alias addall='git add .'
 alias branch='git branch'
+alias addall='git add .'
 alias checkout='git checkout'
 alias commit='git commit -m'
 alias fetch='git fetch'

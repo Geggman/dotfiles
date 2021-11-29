@@ -114,6 +114,12 @@ _G.packer_plugins = {
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/cyclist.vim",
     url = "https://github.com/tjdevries/cyclist.vim"
   },
+  ["doom-one.nvim"] = {
+    config = { "\27LJ\2\n…\3\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\25plugins_integrations\1\0\14\14dashboard\2\14nvim_tree\2\vneogit\2\14telescope\2\rgitsigns\2\14gitgutter\1\15bufferline\1\vbarbar\2\nneorg\2\flspsaga\1\19vim_illuminate\2\21indent_blankline\2\rwhichkey\2\rstartify\2\rpumblend\1\0\2\24transparency_amount\3\20\venable\2\1\0\5\20cursor_coloring\2\27transparent_background\1\22enable_treesitter\2\20italic_comments\2\20terminal_colors\1\nsetup\rdoom-one\frequire\0" },
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
+  },
   ["express_line.nvim"] = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/express_line.nvim",
@@ -137,12 +143,17 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/hoob3rt/lualine.nvim"
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   molokai = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/molokai",
     url = "https://github.com/tomasr/molokai"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     config = { "\27LJ\2\nf\0\0\3\0\5\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\0\1\0009\0\4\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14lspconfig\vconfig\fnull-ls\frequire\0" },
@@ -238,6 +249,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: doom-one.nvim
+time([[Config for doom-one.nvim]], true)
+try_loadstring("\27LJ\2\n…\3\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\25plugins_integrations\1\0\14\14dashboard\2\14nvim_tree\2\vneogit\2\14telescope\2\rgitsigns\2\14gitgutter\1\15bufferline\1\vbarbar\2\nneorg\2\flspsaga\1\19vim_illuminate\2\21indent_blankline\2\rwhichkey\2\rstartify\2\rpumblend\1\0\2\24transparency_amount\3\20\venable\2\1\0\5\20cursor_coloring\2\27transparent_background\1\22enable_treesitter\2\20italic_comments\2\20terminal_colors\1\nsetup\rdoom-one\frequire\0", "config", "doom-one.nvim")
+time([[Config for doom-one.nvim]], false)
 -- Config for: null-ls.nvim
 time([[Config for null-ls.nvim]], true)
 try_loadstring("\27LJ\2\nf\0\0\3\0\5\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\0\1\0009\0\4\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14lspconfig\vconfig\fnull-ls\frequire\0", "config", "null-ls.nvim")

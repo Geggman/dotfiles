@@ -1,7 +1,47 @@
 require('packer').startup(function()
 
   use 'wbthomason/packer.nvim' -- Packer.nvim
-
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- configuration
+      }
+    end
+  }
+  use({
+    'NTBBloodbath/doom-one.nvim',
+    config = function()
+        require('doom-one').setup({
+            cursor_coloring = true,
+            terminal_colors = false,
+            italic_comments = true,
+            enable_treesitter = true,
+            transparent_background = false,
+            pumblend = {
+                enable = true,
+                transparency_amount = 20,
+            },
+            plugins_integrations = {
+                neorg = true,
+                barbar = true,
+                bufferline = false,
+                gitgutter = false,
+                gitsigns = true,
+                telescope = true,
+                neogit = true,
+                nvim_tree = true,
+                dashboard = true,
+                startify = true,
+                whichkey = true,
+                indent_blankline = true,
+                vim_illuminate = true,
+                lspsaga = false,
+            },
+        })
+    end,
+  })
   use({ "jose-elias-alvarez/null-ls.nvim",
     config = function()
         require("null-ls").config({})
@@ -48,9 +88,12 @@ require('packer').startup(function()
   use 'williamboman/nvim-lsp-installer'
 
   -- OTHER
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  } 
   use 'mhinz/vim-startify'
   use 'jiangmiao/auto-pairs'
-  use 'hoob3rt/lualine.nvim'
   use 'tjdevries/cyclist.vim'
   use 'tjdevries/express_line.nvim'
 
