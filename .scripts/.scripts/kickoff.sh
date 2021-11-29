@@ -8,3 +8,4 @@ projects=`echo "$list" | tr " " "\n"`
 selected=`echo "$projects" | fzf`
 
 cd `echo "/$HOME/$dir/$selected"` && tmux new -s $selected
+tmux neww bash -c "vim ." 

@@ -1,7 +1,7 @@
 export ZSH="/home/guy/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 # The .zshrc of Guy Levitzky
@@ -137,3 +137,5 @@ ex ()
 
 
 
+
+alias luamake=/home/guy/.config/nvim/lua-language-server/3rd/luamake/luamake

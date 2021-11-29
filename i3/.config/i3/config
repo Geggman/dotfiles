@@ -22,7 +22,7 @@ set $bg-color "#3c3836"
 # Run i3lock 
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
 
-bindsym $mod+shift+f exec 'xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0'
+bindsym $mod+shift+f exec xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0
 
 
 
@@ -215,7 +215,7 @@ bar {
 
 exec_always ~/.scritps/pastart.sh
 exec_always nitrogen --restore
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec --no-startup-id picom -CGb --config ~/.config/picom/picom.conf
 bindsym --release $mod+p exec passmenu
 for_window [class=".*"] border pixel 1
 

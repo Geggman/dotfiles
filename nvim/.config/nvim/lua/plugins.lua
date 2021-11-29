@@ -2,7 +2,16 @@ require('packer').startup(function()
 
   use 'wbthomason/packer.nvim' -- Packer.nvim
 
+  use({ "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+        require("null-ls").config({})
+        require("lspconfig")["null-ls"].setup({})
+    end,
+    requires = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"}
+    })
+
   -- THEMES
+  use "EdenEast/nightfox.nvim"
   use 'Th3Whit3Wolf/onebuddy'
   use 'tjdevries/gruvbuddy.nvim'
   use 'gruvbox-community/gruvbox'
@@ -36,9 +45,7 @@ require('packer').startup(function()
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-
-  use 'neovim/nvim-lspconfig'
-  use 'kabouzeid/nvim-lspinstall'
+  use 'williamboman/nvim-lsp-installer'
 
   -- OTHER
   use 'mhinz/vim-startify'
