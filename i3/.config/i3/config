@@ -215,6 +215,7 @@ bar {
 
 exec_always ~/.scritps/pastart.sh
 exec_always nitrogen --restore
+exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
 #exec --no-startup-id picom -CGb --config ~/.config/picom/picom.conf
 bindsym --release $mod+p exec passmenu
 for_window [class=".*"] border pixel 1
