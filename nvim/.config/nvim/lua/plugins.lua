@@ -10,45 +10,6 @@ require('packer').startup(function()
       }
     end
   }
-  use({
-    'NTBBloodbath/doom-one.nvim',
-    config = function()
-        require('doom-one').setup({
-            cursor_coloring = true,
-            terminal_colors = false,
-            italic_comments = true,
-            enable_treesitter = true,
-            transparent_background = false,
-            pumblend = {
-                enable = true,
-                transparency_amount = 20,
-            },
-            plugins_integrations = {
-                neorg = true,
-                barbar = true,
-                bufferline = false,
-                gitgutter = false,
-                gitsigns = true,
-                telescope = true,
-                neogit = true,
-                nvim_tree = true,
-                dashboard = true,
-                startify = true,
-                whichkey = true,
-                indent_blankline = true,
-                vim_illuminate = true,
-                lspsaga = false,
-            },
-        })
-    end,
-  })
-  use({ "jose-elias-alvarez/null-ls.nvim",
-    config = function()
-        require("null-ls").config({})
-        require("lspconfig")["null-ls"].setup({})
-    end,
-    requires = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"}
-    })
 
   -- THEMES
   use "EdenEast/nightfox.nvim"
@@ -63,6 +24,8 @@ require('packer').startup(function()
   use 'dracula/vim'
   use 'drewtempelmeyer/palenight.vim'
   use 'ayu-theme/ayu-vim'
+  use 'folke/tokyonight.nvim' 
+  use 'rktjmp/lush.nvim'
 
   -- COLORBUDDY
   use 'tjdevries/colorbuddy.nvim'

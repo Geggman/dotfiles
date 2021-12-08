@@ -11,11 +11,6 @@ keymap('n', 'J', 'mzJ`z', {})
 
 -- Fix copying + pasting
 keymap('n', 'Y', '"y$', {})
-keymap('n', 'y', '"+y', {})
-keymap('n', 'p', '"+p', {})
-keymap('n', 'p', '"+P', {})
-keymap('v', 'p', '"+p', {})
-keymap('v', 'p', '"+P', {})
 
 -- Harpoon 
 keymap('n', '<leader>af', '<cmd>lua require("harpoon.mark").add_file()<cr>', {})

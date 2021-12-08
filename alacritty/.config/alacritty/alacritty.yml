@@ -29,10 +29,10 @@ colors:
 
 font:
   normal:
-    family: ubuntu mono nerd font
+    family: ubuntu mono nerd font 
     style: regular
 
-  size: 18.0
+  size: 16.0
 
 window_opacity: 0.9
 cursor:

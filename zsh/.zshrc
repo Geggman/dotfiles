@@ -86,7 +86,7 @@ alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
 
 # Fix the displays
-alias fix-displays='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0'
+alias fix-displays='xrandr --output DP-1 --left-of HDMI-1 --output DVI-D-1 --right-of HDMI-1'
 
 # python3? more like p3
 alias p3='python3'
