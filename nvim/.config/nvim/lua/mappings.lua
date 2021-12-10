@@ -35,6 +35,10 @@ keymap('n', '<leader>dot', ':lua require("plug-config.telescope").search_dotfile
 -- Create new file
 keymap('n', '<leader>new', ':lua require("scripts.createfile").create_file()<cr>', {})
 
+-- Wiki.vim
+keymap('n', '<leader>wo', ':WikiOpen', {})
+--keymap('n', '<leader>')
+
 
 
 

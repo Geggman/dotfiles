@@ -10,15 +10,15 @@ require('packer').startup(function()
       }
     end
   }
+  
+  
 
   -- THEMES
   use "EdenEast/nightfox.nvim"
   use 'Th3Whit3Wolf/onebuddy'
   use 'tjdevries/gruvbuddy.nvim'
   use 'gruvbox-community/gruvbox'
-  use 'navarasu/onedark.nvim'
   use 'mhartington/oceanic-next'
-  use 'tomasr/molokai'
   use {'challenger-deep-theme/vim', as = 'challenger-deep'}
   use 'kyazdani42/nvim-web-devicons'
   use 'dracula/vim'
@@ -55,9 +55,21 @@ require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   } 
+  use 'lervag/wiki.vim'
   use 'mhinz/vim-startify'
   use 'jiangmiao/auto-pairs'
   use 'tjdevries/cyclist.vim'
   use 'tjdevries/express_line.nvim'
+  use 'numToStr/Comment.nvim'
+
+
+
+
+
+
+
+
+-- End Packer
+
 
 end)

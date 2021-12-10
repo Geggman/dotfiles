@@ -14,7 +14,7 @@ set.number = true
 set.relativenumber = true
 set.swapfile = false
 set.hidden = true
-set.guicursor = ""
+-- set.guicursor = ""
 set.hlsearch = false
 set.mouse = 'a'
 set.incsearch = true
@@ -23,3 +23,7 @@ set.scrolloff = 8
 set.syntax = 'on'
 vim.cmd(":set clipboard=unnamedplus")
 
+-- wiki.vim
+vim.g.wiki_root='~/wiki'
+vim.g.filetypes = 'md'
+vim.g.wiki_link_extension = '.md'

@@ -30,7 +30,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>h', '<cmd>lua vim.lsp.buf.rename()<CR>', {})
 end
 
-require'lspconfig'.sumneko_lua.setup {
+require 'lspconfig'.sumneko_lua.setup {
   cmd = {'/home/guy/lua-language-server/bin/Linux/lua-language-server', "-E", '/home/guy/lua-language-server' .. "/main.lua"};
   settings = {
     Lua = {
