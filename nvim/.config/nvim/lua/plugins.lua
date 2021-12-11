@@ -12,6 +12,7 @@ require('packer').startup(function()
   }
 
   -- THEMES
+  use 'folke/lsp-colors.nvim'
   use "EdenEast/nightfox.nvim"
   use 'Th3Whit3Wolf/onebuddy'
   use 'tjdevries/gruvbuddy.nvim'

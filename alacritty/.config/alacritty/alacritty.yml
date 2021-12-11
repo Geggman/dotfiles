@@ -2,29 +2,31 @@
 colors:
   # Default colors
   primary:
-    background: '#000000'
-    foreground: '#dddddd'
+    background: '#282c34'
+    foreground: '#abb2bf'
 
   # Normal colors
   normal:
-    black: '#000000'
-    red: '#cc0403'
-    green: '#19cb00'
-    yellow: '#cecb00'
-    blue: '#0d73cc'
-    magenta: '#cb1ed1'
-    cyan: '#0dcdcd'
-    white: '#dddddd'
+    # NOTE: Use '#131613' for the `black` color if you'd like to see
+    # black text on the background.
+    black: '#282c34'
+    red: '#e06c75'
+    green: '#98c379'
+    yellow: '#d19a66'
+    blue: '#61afef'
+    magenta: '#c678dd'
+    cyan: '#56b6c2'
+    white: '#abb2bf'
 
   # Bright colors
   bright:
-    black: '#767676'
-    red: '#f2201f'
-    green: '#23fd00'
-    yellow: '#fffd00'
-    blue: '#1a8fff'
-    magenta: '#fd28ff'
-    cyan: '#14ffff'
+    black: '#5c6370'
+    red: '#e06c75'
+    green: '#98c379'
+    yellow: '#d19a66'
+    blue: '#61afef'
+    magenta: '#c678dd'
+    cyan: '#56b6c2'
     white: '#ffffff'
 
 font:
@@ -38,4 +40,7 @@ window_opacity: 0.9
 cursor:
   style:
     blinking: Never
-theme: Kitty
+theme: One-Dark
+
+env:
+  TERM: xterm-256color

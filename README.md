@@ -1,9 +1,10 @@
 # Dotfiles
-```TO INSTALL USE install.sh or i will hurt u```
+  ### Installation
+    * For Insatllation execute ```install.sh``` as root
 
   ## TODO
-    - Finish the install.sh script
-      - Add some packages and some more improvments
+    [] Finish the install.sh script
+      [] Add packages 
 
-    - Fix the nvim 'global vim not defined'
-      
+    [] Fix the nvim 'global vim not defined'
+      - Its something to do with the sumneko lua lsp   

@@ -4,7 +4,8 @@ require('settings') -- Settings
 require('mappings') -- Key mappings
 
 -- Colorscheme Shit
-vim.cmd("colorscheme nightfox")
+-- vim.cmd("colorscheme gruvb")
+require('colorbuddy').colorscheme("onebuddy")
 
 -- Plugin Configuration
 require('plug-config.cmpconfig') -- nvim-cmp.nvim

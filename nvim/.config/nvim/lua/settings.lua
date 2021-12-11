@@ -23,6 +23,9 @@ set.scrolloff = 8
 set.syntax = 'on'
 vim.cmd(":set clipboard=unnamedplus")
 
+-- testing
+
+
 -- wiki.vim
 vim.g.wiki_root='~/wiki'
 vim.g.filetypes = 'md'

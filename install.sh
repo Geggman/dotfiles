@@ -25,7 +25,6 @@ stow i3 tmux nvim alacritty bash zsh .scripts
 cd $HOME
 
 # Install packer.nvim
-
 echo "$green[+]$reset $blue Installing Packer.nvim"
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -37,7 +36,7 @@ git clone git://github.com/tobi-wan-kenobi/bumblebee-status
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# clone plugins
+# Clone plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Stow zsh
@@ -56,7 +55,7 @@ echo "$green[+]$reset $blue Installing alacritty-themes"
 npm install -g alacritty-themes
 
 
-# ------- INSTALL SUMNEKO LUA LSP -------
+# -------- INSTALL SUMNEKO LUA LSP --------
 echo "$green[+]$reset $blue Installing Lua LSP"
 # Clone
 git clone https://github.com/sumneko/lua-language-server
@@ -73,4 +72,6 @@ cd ../..
 clear
 echo "$GREEN ALL SET!"
 neofetch
+
+# ------- 
 

@@ -13,13 +13,6 @@ source $ZSH/oh-my-zsh.sh
 # ||         ||  ||
 #   ==========    =========
 
-
-# ***********
-# * Sources *
-# ***********
-
-# Best Theme
-
 # ***********
 # * Aliases *
 # ***********
@@ -28,9 +21,9 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 
 # tmux aliases
+alias tmux='tmux -2'
 alias tmls="tmux list-sessions"
 alias tmlk="tmux kill-server"
-alias tmux="tmux -c"
 
 # Vim is Neovim
 alias vim='nvim'
