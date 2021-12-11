@@ -4,8 +4,8 @@
 
 ## TODO
   ### *install.sh* 
-    - [] Add packages 
+  - [ ] Add packages 
 
   ### Neovim
-    - [] Fix the nvim 'global vim not defined'
+  - [ ] Fix the nvim 'global vim not defined'
 
