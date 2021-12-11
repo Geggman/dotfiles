@@ -17,9 +17,6 @@ source $ZSH/oh-my-zsh.sh
 # * Aliases *
 # ***********
 
-# Git bare repo for my dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-
 # tmux aliases
 alias tmux='tmux -2'
 alias tmls="tmux list-sessions"
