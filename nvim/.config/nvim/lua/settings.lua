@@ -1,6 +1,10 @@
 -- vim.o - global options
 -- vim.wo - local to window
 
+vim.g.wiki_root='~/wiki'
+vim.g.filetypes = 'md'
+vim.g.wiki_link_extension = '.md'
+
 vim.g.mapleader = ' '
 
 local set = vim.o
@@ -23,10 +27,5 @@ set.scrolloff = 8
 set.syntax = 'on'
 vim.cmd(":set clipboard=unnamedplus")
 
--- testing
 
 
--- wiki.vim
-vim.g.wiki_root='~/wiki'
-vim.g.filetypes = 'md'
-vim.g.wiki_link_extension = '.md'

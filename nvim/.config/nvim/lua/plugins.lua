@@ -10,7 +10,6 @@ require('packer').startup(function()
       }
     end
   }
-
   -- THEMES
   use 'folke/lsp-colors.nvim'
   use "EdenEast/nightfox.nvim"
@@ -54,7 +53,6 @@ require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   } 
-  use 'lervag/wiki.vim'
   use 'mhinz/vim-startify'
   use 'jiangmiao/auto-pairs'
   use 'tjdevries/express_line.nvim'

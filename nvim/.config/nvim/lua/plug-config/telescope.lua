@@ -40,6 +40,12 @@ M.search_dotfiles = function()
   })
 end
 
+M.search_todo = function()
+  require("telescope.builtin").find_files({
+    prompt_title= "< Todo >",
+    cwd = "~/.todo/",
+  })
+end
 
 
 return M

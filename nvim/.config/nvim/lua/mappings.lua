@@ -15,10 +15,10 @@ keymap('n', 'Y', '"y$', {})
 -- Harpoon 
 keymap('n', '<leader>af', '<cmd>lua require("harpoon.mark").add_file()<cr>', {})
 keymap('n', '<leader>qm', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>', {})
-keymap('n', '<leader>gj', '<cmd>lua require("harpoon.ui").nav_file(1)', {})
-keymap('n', '<leader>gk', '<cmd>lua require("harpoon.ui").nav_file(2)', {})
-keymap('n', '<leader>gl', '<cmd>lua require("harpoon.ui").nav_file(3)', {})
-keymap('n', '<leader>g;', '<cmd>lua require("harpoon.ui").nav_file(4)', {})
+keymap('n', '<leader>fj', '<cmd>lua require("harpoon.ui").nav_file(1)<cr>', {})
+keymap('n', '<leader>fk', '<cmd>lua require("harpoon.ui").nav_file(2)<cr>', {})
+keymap('n', '<leader>fl', '<cmd>lua require("harpoon.ui").nav_file(3)<cr>', {})
+keymap('n', '<leader>f;', '<cmd>lua require("harpoon.ui").nav_file(4)<cr>', {})
 
 -- Moving Text
 keymap('v', 'J', ":m '>+1<cr>gv=gv", {})
@@ -32,12 +32,10 @@ keymap('n', '<leader>k', ':m .-2<cr>==', {})
 keymap('n', '<leader>vim', ':lua require("plug-config.telescope").search_vimfiles()<cr>', {})
 keymap('n', '<leader>dot', ':lua require("plug-config.telescope").search_dotfiles()<cr>', {})
 
--- Create new file
-keymap('n', '<leader>new', ':lua require("scripts.createfile").create_file()<cr>', {})
+-- Todos
+keymap('n', '<leader>to', ':lua require("plug-config.telescope").search_todo()<cr>', {})
+keymap('n', '<leader>tc', ':lua require("scripts.todo").create_file()<cr>', {})
 
--- Wiki.vim
-keymap('n', '<leader>wo', ':WikiOpen', {})
---keymap('n', '<leader>')
 
 
 
