@@ -1,5 +1,26 @@
 local nvim_lsp = require('lspconfig')
 
+-- Setup lua LSP
+require 'lspconfig'.sumneko_lua.setup {
+  cmd = {'/home/guy/lua-language-server/bin/Linux/lua-language-server', "-E", '/home/guy/lua-language-server' .. "/main.lua"};
+  settings = {
+    Lua = {
+        -- Get the language server to recognize the `vim` global
+      diagnostics = {
+        globals = {'vim', 'use'},
+      },
+      workspace = {
+        -- Make the server aware of Neovim runtime files
+        library = vim.api.nvim_get_runtime_file("", true),
+      },
+      -- Do not send telemetry data containing a randomized but unique identifier
+      telemetry = {
+        enable = false,
+      },
+    },
+  }
+}
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
@@ -30,22 +51,3 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>h', '<cmd>lua vim.lsp.buf.rename()<CR>', {})
 end
 
-require 'lspconfig'.sumneko_lua.setup {
-  cmd = {'/home/guy/lua-language-server/bin/Linux/lua-language-server', "-E", '/home/guy/lua-language-server' .. "/main.lua"};
-  settings = {
-    Lua = {
-        -- Get the language server to recognize the `vim` global
-      diagnostics = {
-        globals = {'vim', 'use'},
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
-  }
-}

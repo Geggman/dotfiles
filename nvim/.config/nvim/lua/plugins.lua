@@ -10,8 +10,6 @@ require('packer').startup(function()
       }
     end
   }
-  
-  
 
   -- THEMES
   use "EdenEast/nightfox.nvim"
@@ -58,7 +56,6 @@ require('packer').startup(function()
   use 'lervag/wiki.vim'
   use 'mhinz/vim-startify'
   use 'jiangmiao/auto-pairs'
-  use 'tjdevries/cyclist.vim'
   use 'tjdevries/express_line.nvim'
   use 'numToStr/Comment.nvim'
 

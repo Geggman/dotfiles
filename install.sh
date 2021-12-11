@@ -15,7 +15,7 @@ then echo "$bold$red[!]$reset $bold$blue Run This Script as ROOT"
 fi
 
 echo "$green[+]$reset $blue Installing some packages"
-pacman -S nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
+pacman -S neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
 
 # symlink everything using stow
 echo "$green[+]$reset $blue Stowing everthing"
@@ -72,4 +72,5 @@ cd ../..
 # Finish the script
 clear
 echo "$GREEN ALL SET!"
+neofetch
 

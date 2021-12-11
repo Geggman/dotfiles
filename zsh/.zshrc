@@ -14,7 +14,6 @@ source $ZSH/oh-my-zsh.sh
 #   ==========    =========
 
 
-
 # ***********
 # * Sources *
 # ***********
@@ -31,6 +30,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 # tmux aliases
 alias tmls="tmux list-sessions"
 alias tmlk="tmux kill-server"
+alias tmux="tmux -c"
 
 # Vim is Neovim
 alias vim='nvim'
@@ -135,7 +135,6 @@ ex ()
 # fetch-master 6000
 #fm6000 -r -c magenta
 
-
-
-
 alias luamake=/home/guy/.config/nvim/lua-language-server/3rd/luamake/luamake
+
+neofetch

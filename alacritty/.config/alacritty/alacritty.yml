@@ -1,31 +1,31 @@
 # Colors (Gruvbox Material Dark Medium)
 colors:
-  name: Atelierdune (dark)
-  author: Chris Kempson
+  # Default colors
   primary:
-    background: "#20201d"
-    foreground: "#a6a28c"
-  cursor:
-    text: "#20201d"
-    cursor: "#a6a28c"
+    background: '#000000'
+    foreground: '#dddddd'
+
+  # Normal colors
   normal:
-    black: "#20201d"
-    red: "#d73737"
-    green: "#60ac39"
-    yellow: "#cfb017"
-    blue: "#6684e1"
-    magenta: "#b854d4"
-    cyan: "#1fad83"
-    white: "#a6a28c"
+    black: '#000000'
+    red: '#cc0403'
+    green: '#19cb00'
+    yellow: '#cecb00'
+    blue: '#0d73cc'
+    magenta: '#cb1ed1'
+    cyan: '#0dcdcd'
+    white: '#dddddd'
+
+  # Bright colors
   bright:
-    black: "#7d7a68"
-    red: "#d73737"
-    green: "#60ac39"
-    yellow: "#cfb017"
-    blue: "#6684e1"
-    magenta: "#b854d4"
-    cyan: "#1fad83"
-    white: "#fefbec"
+    black: '#767676'
+    red: '#f2201f'
+    green: '#23fd00'
+    yellow: '#fffd00'
+    blue: '#1a8fff'
+    magenta: '#fd28ff'
+    cyan: '#14ffff'
+    white: '#ffffff'
 
 font:
   normal:
@@ -38,4 +38,4 @@ window_opacity: 0.9
 cursor:
   style:
     blinking: Never
-theme: Atelierdune.dark
+theme: Kitty
