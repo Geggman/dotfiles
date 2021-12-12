@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/auto-pairs",
@@ -109,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
-  ["cyclist.vim"] = {
-    loaded = true,
-    path = "/home/guy/.local/share/nvim/site/pack/packer/start/cyclist.vim",
-    url = "https://github.com/tjdevries/cyclist.vim"
-  },
   ["express_line.nvim"] = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/express_line.nvim",
@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -143,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
-  },
-  molokai = {
-    loaded = true,
-    path = "/home/guy/.local/share/nvim/site/pack/packer/start/molokai",
-    url = "https://github.com/tomasr/molokai"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -188,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/onebuddy",
     url = "https://github.com/Th3Whit3Wolf/onebuddy"
-  },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/guy/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

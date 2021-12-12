@@ -34,7 +34,7 @@ keymap('n', '<leader>dot', ':lua require("plug-config.telescope").search_dotfile
 
 -- Todos
 keymap('n', '<leader>to', ':lua require("plug-config.telescope").search_todo()<cr>', {})
-keymap('n', '<leader>tc', ':lua require("scripts.todo").create_file()<cr>', {})
+keymap('n', '<leader>tc', ':lua require("scripts.todo").create_todo()<cr>', {})
 
 
 

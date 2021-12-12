@@ -61,7 +61,8 @@ require('packer').startup(function()
 
 
 
-
+  -- LUAROCKS
+  use_rocks 'luafilesystem'
 
 
 

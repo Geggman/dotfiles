@@ -33,17 +33,19 @@ M.search_vimfiles = function()
   })
 end
 
-M.search_dotfiles = function()
-  require("telescope.builtin").git_files({
-    prompt_title = "< Dotfiles >",
-    cwd = "~/dotfiles/",
-  })
-end
-
+-- List the todos
 M.search_todo = function()
   require("telescope.builtin").find_files({
     prompt_title= "< Todo >",
     cwd = "~/.todo/",
+  })
+end
+
+-- List the vim config files
+M.search_dotfiles = function()
+  require("telescope.builtin").git_files({
+    prompt_title = "< Dotfiles >",
+    cwd = "~/dotfiles/",
   })
 end
 
