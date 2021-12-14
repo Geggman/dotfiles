@@ -40,6 +40,7 @@ require('packer').startup(function()
   use 'nvim-telescope/telescope-fzy-native.nvim'
 
   -- LSP
+  use "folke/lua-dev.nvim" 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
