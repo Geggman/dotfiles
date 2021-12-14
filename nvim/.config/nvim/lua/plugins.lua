@@ -22,7 +22,7 @@ require('packer').startup(function()
   use 'dracula/vim'
   use 'drewtempelmeyer/palenight.vim'
   use 'ayu-theme/ayu-vim'
-  use 'folke/tokyonight.nvim' 
+  use 'folke/tokyonight.nvim'
   use 'rktjmp/lush.nvim'
 
   -- COLORBUDDY
@@ -52,7 +52,7 @@ require('packer').startup(function()
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  } 
+  }
   use 'mhinz/vim-startify'
   use 'jiangmiao/auto-pairs'
   use 'tjdevries/express_line.nvim'

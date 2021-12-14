@@ -5,7 +5,6 @@ require("harpoon").setup({
     },
 })
 
-local keymap = vim.api.nvim_set_keymap
 
 
 

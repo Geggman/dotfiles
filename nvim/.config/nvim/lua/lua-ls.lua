@@ -13,8 +13,8 @@ else
     print("Unsupported system for sumneko")
 end
 
-require('lspconfig').sumneko_lua.setup {
-    cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
+require'lspconfig'.sumneko_lua.setup {
+    cmd = { sumneko_binary, "-E", sumneko_root_path .. "/main.lua" },
     settings = {
         Lua = {
             runtime = {
@@ -25,7 +25,7 @@ require('lspconfig').sumneko_lua.setup {
             },
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
-                globals = {'vim'}
+                globals = { 'vim', 'use' }
             },
             workspace = {
                 -- Make the server aware of Neovim runtime files

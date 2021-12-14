@@ -34,9 +34,9 @@ font:
     family: caskaydia cove nerd font
     style: regular
 
-  size: 14.0
+  size: 13.0
 
-window_opacity: 0.9
+window_opacity: 0.5
 cursor:
   style:
     blinking: Never
