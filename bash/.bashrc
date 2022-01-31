@@ -9,6 +9,7 @@
 
 
 
+export EDITOR="nvim"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -128,6 +129,12 @@ ex ()
 
 
 # Prompt
-PS1='\W \$ '
+RED="\[$(tput setaf 1)\]"
+BLUE="\[$(tput setaf 4)\]"
+RESET="\[$(tput sgr0)\]"
+PS1="$RED[$RESET\u@\h\W$RED]$RESET\$ "
 eval "$(starship init bash)"
 
+
+alias luamake=/home/gegg/dotfiles/lua-language-server/3rd/luamake/luamake
+export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.local/bin

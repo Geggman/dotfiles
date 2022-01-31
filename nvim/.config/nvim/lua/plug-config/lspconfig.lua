@@ -1,3 +1,4 @@
+vim.lsp.set_log_level("debug")
 local nvim_lsp = require('lspconfig')
 
 -- Setup lua LSP

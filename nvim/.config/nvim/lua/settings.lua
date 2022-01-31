@@ -1,13 +1,14 @@
 -- vim.o - global options
 -- vim.wo - local to window
 
-vim.g.wiki_root='~/wiki'
-vim.g.filetypes = 'md'
-vim.g.wiki_link_extension = '.md'
-
 vim.g.mapleader = ' '
+vim.g.ayucolor = "mirage"
 
 local set = vim.o
+
+vim.cmd("colorscheme NeoSolarized")
+-- require('colorbuddy').colorscheme("gruvbuddy")
+-- vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true
 set.smartindent = true
@@ -26,6 +27,5 @@ set.wrap = false
 set.scrolloff = 8
 set.syntax = 'on'
 vim.cmd(":set clipboard=unnamedplus")
-
 
 

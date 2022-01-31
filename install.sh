@@ -9,13 +9,9 @@ reset=$(tput sgr0)
 # Text effects
 bold=$(tput bold)
 
-if [ "$EUID" -ne 0 ]
-then echo "$bold$red[!]$reset $bold$blue Run This Script as ROOT"
-    exit 1
-fi
 
 echo "$green[+]$reset $blue Installing some packages"
-pacman -S bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
+sudo pacman -S bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
 
 # symlink everything using stow
 echo "$green[+]$reset $blue Stowing everthing"
@@ -34,7 +30,7 @@ echo "$green[+]$reset $blue Installing bumblebee-status"
 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Clone plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -52,7 +48,7 @@ mkdir $HOME/projects/
 
 # Install alacritty-themes
 echo "$green[+]$reset $blue Installing alacritty-themes"
-npm install -g alacritty-themes
+sudo npm install -g alacritty-themes
 
 
 # -------- INSTALL SUMNEKO LUA LSP --------

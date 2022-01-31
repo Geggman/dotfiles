@@ -46,5 +46,5 @@ cmp.setup({
     }, {
       { name = 'cmdline' }
     })
-  })
+})
 

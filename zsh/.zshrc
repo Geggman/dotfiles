@@ -1,7 +1,16 @@
-export ZSH="/home/guy/.oh-my-zsh"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-ZSH_THEME="robbyrussell"
-plugins=(git zsh-syntax-highlighting)
+export ZSH="/home/$(whoami)/.oh-my-zsh/"
+export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR="nvim"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git zsh-syntax-highlighting) 
 
 source $ZSH/oh-my-zsh.sh
 # The .zshrc of Guy Levitzky
@@ -22,6 +31,13 @@ alias tmux='tmux -2'
 alias tmls="tmux list-sessions"
 alias tmlk="tmux kill-server"
 
+# kitty terminal
+alias kitty-source="kitty -c /home/gegg/.config/kitty/kitty.conf"
+
+# Cron alias
+alias rootcron="sudo EDITOR=nvim crontab -e"
+alias usercron="EDITOR=nvim crontab -e"
+
 # Vim is Neovim
 alias vim='nvim'
 
@@ -40,8 +56,8 @@ alias yaysua='yay -Sua --noconfirm'
 alias yaysyu='yay -Syu --noconfirm'
 
 # 'ls' is 'exa' now
-alias ls='exa -al --color=always --group-directories-first'
-alias la='exa -a --color=always --group-directories-first'
+alias ls='exa -al --color=always --group-directories-first --icons'
+alias la='exa -a --color=always --group-directories-first --icons'
 alias l.='exa -a | egrep "^\."'
 
 # Grep Color
@@ -76,7 +92,7 @@ alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias gitauto="~/dotfiles/.scripts/.scripts/git-automation.sh"
 
 # Fix the displays
-alias fix-displays='xrandr --output DP-1 --left-of HDMI-1 --output DVI-D-1 --right-of HDMI-1'
+alias fixd='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0'
 
 # python3? more like p3
 alias p3='python3'
@@ -127,4 +143,8 @@ ex ()
 
 alias luamake=/home/guy/.config/nvim/lua-language-server/3rd/luamake/luamake
 
-neofetch
+# neofetch
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+

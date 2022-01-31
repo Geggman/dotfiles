@@ -1,16 +1,11 @@
+require("plug-config.luadev") -- lua lsp config
+
 -- Core config
 require('plugins') -- Plugins
 require('settings') -- Settings
 require('mappings') -- Key mappings
 
--- Colorscheme Shit
-
--- vim.cmd("colorscheme gruvb")
-require('colorbuddy').colorscheme("onebuddy")
-
-
-
-require("plug-config.luadev")
+-- Plugins
 require('plug-config.lspconfig') -- lspconfig.nvim
 require('plug-config.cmpconfig') -- nvim-cmp.nvim
 require('plug-config.lspinstall') -- lspinstall.nvim

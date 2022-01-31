@@ -11,6 +11,7 @@ require('packer').startup(function()
     end
   }
   -- THEMES
+  use 'overcache/NeoSolarized'
   use 'folke/lsp-colors.nvim'
   use "EdenEast/nightfox.nvim"
   use 'Th3Whit3Wolf/onebuddy'
@@ -58,6 +59,7 @@ require('packer').startup(function()
   use 'jiangmiao/auto-pairs'
   use 'tjdevries/express_line.nvim'
   use 'numToStr/Comment.nvim'
+  use 'sbdchd/neoformat'
 
 
 

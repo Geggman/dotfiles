@@ -53,7 +53,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -190,8 +190,8 @@ set $transparent #00000000
 # finds out, if available)
 bar { 
       position top
-     font pango:Mononoki Nerd Font 10
-	 status_command /home/guy/bumblebee-status/bumblebee-status \
+     font pango:Mononoki Nerd Font 13
+	 status_command /home/gegg/bumblebee-status/bumblebee-status \
         -m cpu uptime nic \
         pasink time date -p time.format="%H:%M" 
     #colors {
