@@ -124,16 +124,14 @@ ex ()
   fi
 }
 
-# fetch-master 6000
-#fm6000 -r -c magenta
 
 
 # Prompt
 RED="\[$(tput setaf 1)\]"
 BLUE="\[$(tput setaf 4)\]"
 RESET="\[$(tput sgr0)\]"
-PS1="$RED[$RESET\u@\h\W$RED]$RESET\$ "
-eval "$(starship init bash)"
+PS1="$RED[$RESET\u@\h $RED]$RESET \W \$ "
+# eval "$(starship init bash)"
 
 
 alias luamake=/home/gegg/dotfiles/lua-language-server/3rd/luamake/luamake

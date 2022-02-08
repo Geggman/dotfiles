@@ -6,7 +6,7 @@ vim.g.ayucolor = "mirage"
 
 local set = vim.o
 
-vim.cmd("colorscheme NeoSolarized")
+vim.cmd("colorscheme nightfox")
 -- require('colorbuddy').colorscheme("gruvbuddy")
 -- vim.cmd("highlight Normal guibg=none")
 
@@ -27,5 +27,4 @@ set.wrap = false
 set.scrolloff = 8
 set.syntax = 'on'
 vim.cmd(":set clipboard=unnamedplus")
-
 
