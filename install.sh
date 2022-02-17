@@ -21,7 +21,7 @@ cd /home/$name
 
 
 echo "$green[+]$reset $blue Installing some packages"
-pacman -S bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
+pacman -Syyu bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Update system and install some basic stuff  
 
 # Fetch dotfiles
 git clone https://github.com/Geggman/dotfiles.github
