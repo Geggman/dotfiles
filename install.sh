@@ -18,12 +18,17 @@ read -p "Username: " name
 
 cd /home/$name
 
+
 echo "$green[+]$reset $blue Installing some packages"
 pacman -S bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
 
+# Fetch dotfiles
+git clone https://github.com/Geggman/dotfiles.github
+cd dotfiles
+
 # symlink everything using stow
 echo "$green[+]$reset $blue Stowing everthing"
-rm ~/.bashrc
+rm /home/$name/.bashrc
 stow i3 tmux nvim alacritty bash zsh .scripts
 
 cd /home/$name
