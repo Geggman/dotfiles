@@ -58,7 +58,7 @@ alias la='exa -a --color=always --group-directories-first --icons'
 alias l.='exa -a | egrep "^\."'
 
 # Grep Color
-alias grep='grep --color=auto'
+alias grep='rg --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
