@@ -9,7 +9,8 @@ reset=$(tput sgr0)
 # Text effects
 bold=$(tput bold)
 
-if [ $EUID -ne 0 ] then 
+if [ $EUID -ne 0 ] 
+then 
   echo "$red[$bold!$reset$red] Please run the script as root"
   exit
 fi
