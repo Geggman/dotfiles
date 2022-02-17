@@ -1,4 +1,3 @@
-require("plug-config.luadev") -- lua lsp config
 
 -- Core config
 require('plugins') -- Plugins
@@ -16,3 +15,4 @@ require('plug-config.treesitter') -- treesitter
 require('plug-config.telescope') -- telescope.nvim
 require('plug-config.comment') -- comment.nvim
 
+require("plug-config.luadev") -- lua lsp config

@@ -1,6 +1,9 @@
 # The .zshrc of Guy Levitzky
 # Github: Geggman
 
+# ***********
+# * Exports *
+# ***********
 
 export ZSH="/home/$(whoami)/.oh-my-zsh/"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -27,6 +30,10 @@ alias kitty-source="kitty -c /home/gegg/.config/kitty/kitty.conf"
 # Cron alias
 alias rootcron="sudo EDITOR=nvim crontab -e"
 alias usercron="EDITOR=nvim crontab -e"
+
+# Some source
+alias sbash="source ~/.bashrc"
+alias szsh="source ~/.zshrc"
 
 # Vim is Neovim
 alias vim='nvim'
@@ -96,14 +103,12 @@ alias ko="bash ~/.scripts/kickoff.sh"
 # shred is more secure
 alias rmshred="shred --remove"
 
-
+# luamake
+alias luamake=/home/guy/.config/nvim/lua-language-server/3rd/luamake/luamake
 
 # ***************
-# * Other Stuff *
+# *  Functions  *
 # ***************
-
-# EXTRACT ARCHIVE FILES
-# usage: ex <file>
 
 ex ()
 {
@@ -130,7 +135,12 @@ ex ()
   fi
 }
 
-alias luamake=/home/guy/.config/nvim/lua-language-server/3rd/luamake/luamake
+
+
+# ***************
+# * Other Stuff *
+# ***************
+
 
 
 

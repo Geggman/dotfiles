@@ -5,7 +5,7 @@ local luadev = require("lua-dev").setup({
     settings = {
       Lua = {
         diagnostics = {
-          globals = {"vim" , "use", "use_rocks"}
+          globals = {"vim","use","use_rocks"}
         }
       }
     }

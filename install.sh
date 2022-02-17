@@ -9,16 +9,24 @@ reset=$(tput sgr0)
 # Text effects
 bold=$(tput bold)
 
+if [ $EUID -ne 0 ] then 
+  echo "$red[$bold!$reset$red] Please run the script as root"
+  exit
+fi
+
+read -p "Username: " name
+
+cd /home/$name
 
 echo "$green[+]$reset $blue Installing some packages"
-sudo pacman -S bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
+pacman -S bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Install some basic stuff
 
 # symlink everything using stow
 echo "$green[+]$reset $blue Stowing everthing"
 rm ~/.bashrc
 stow i3 tmux nvim alacritty bash zsh .scripts
 
-cd $HOME
+cd /home/$name
 
 # Install packer.nvim
 echo "$green[+]$reset $blue Installing Packer.nvim"
@@ -30,7 +38,7 @@ echo "$green[+]$reset $blue Installing bumblebee-status"
 git clone git://github.com/tobi-wan-kenobi/bumblebee-status
 
 # Install oh-my-zsh
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Clone plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -44,14 +52,16 @@ stow zsh/
 
 # Create Project folder
 echo "$green[+]$reset $blue Creating projects folder"
-mkdir $HOME/projects/
+mkdir /home/$name/projects/
 
 # Install alacritty-themes
 echo "$green[+]$reset $blue Installing alacritty-themes"
-sudo npm install -g alacritty-themes
-
+npm install -g alacritty-themes
 
 # -------- INSTALL SUMNEKO LUA LSP --------
+
+cd /home/$name
+
 echo "$green[+]$reset $blue Installing Lua LSP"
 # Clone
 git clone https://github.com/sumneko/lua-language-server

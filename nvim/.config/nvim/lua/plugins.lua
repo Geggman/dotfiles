@@ -10,7 +10,9 @@ require('packer').startup(function()
       }
     end
   }
+
   -- THEMES
+  use 'ishan9299/modus-theme-vim'
   use 'overcache/NeoSolarized'
   use 'folke/lsp-colors.nvim'
   use "EdenEast/nightfox.nvim"
@@ -41,7 +43,7 @@ require('packer').startup(function()
   use 'nvim-telescope/telescope-fzy-native.nvim'
 
   -- LSP
-  use "folke/lua-dev.nvim" 
+  use "folke/lua-dev.nvim"
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -69,7 +71,6 @@ require('packer').startup(function()
 
 
 
--- End Packer
 
 
 end)

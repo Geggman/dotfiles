@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/gegg/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
   },
+  ["modus-theme-vim"] = {
+    loaded = true,
+    path = "/home/gegg/.local/share/nvim/site/pack/packer/start/modus-theme-vim",
+    url = "https://github.com/ishan9299/modus-theme-vim"
+  },
   neoformat = {
     loaded = true,
     path = "/home/gegg/.local/share/nvim/site/pack/packer/start/neoformat",
