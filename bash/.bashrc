@@ -125,7 +125,7 @@ ex ()
 }
 
 
-# Prompt
+## Prompt ###
 RED="\[$(tput setaf 1)\]"
 BLUE="\[$(tput setaf 4)\]"
 RESET="\[$(tput sgr0)\]"

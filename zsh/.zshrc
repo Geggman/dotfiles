@@ -8,7 +8,7 @@
 export ZSH="/home/$(whoami)/.oh-my-zsh/"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
-export ZSH_THEME="gentoo"
+export ZSH_THEME="dallas"
 
 
 plugins=(git zsh-syntax-highlighting) 
@@ -44,13 +44,6 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-
-# Pacman and Yay
-alias pacs='sudo pacman -S'
-alias pacr='sudo pacman -R'
-alias pacsyu='sudo pacman -Syyu'
-alias yaysua='yay -Sua --noconfirm'
-alias yaysyu='yay -Syu --noconfirm'
 
 # 'ls' is 'exa' now
 alias ls='exa -al --color=always --group-directories-first --icons'

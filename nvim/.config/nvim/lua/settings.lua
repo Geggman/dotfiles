@@ -6,9 +6,9 @@ vim.g.ayucolor = "mirage"
 
 local set = vim.o
 
-vim.cmd("colorscheme NeoSolarized")
+vim.cmd("colorscheme modus-vivendi")
 -- require('colorbuddy').colorscheme("gruvbuddy")
--- vim.cmd("highlight Normal guibg=none")
+vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true
 set.smartindent = true
