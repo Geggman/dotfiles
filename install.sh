@@ -24,7 +24,7 @@ echo "$green[+]$reset $blue Installing some packages"
 pacman -Syyu bpytop fd neofetch nodejs npm fzf virt-manager alacritty zsh exa stow git tmux ripgrep xclip # Update system and install some basic stuff  
 
 # Fetch dotfiles
-git clone https://github.com/Geggman/dotfiles.github
+git clone https://github.com/Geggman/dotfiles.git
 cd dotfiles
 
 # symlink everything using stow
@@ -47,7 +47,7 @@ git clone git://github.com/tobi-wan-kenobi/bumblebee-status
  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Clone plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/home/$name/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Stow zsh
 echo "$green[+]$reset $blue Stowing zsh"
