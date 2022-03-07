@@ -6,7 +6,7 @@ vim.g.ayucolor = "mirage"
 
 local set = vim.o
 
-vim.cmd("colorscheme modus-vivendi")
+vim.cmd("colorscheme nightfox")
 -- require('colorbuddy').colorscheme("gruvbuddy")
 vim.cmd("highlight Normal guibg=none")
 
