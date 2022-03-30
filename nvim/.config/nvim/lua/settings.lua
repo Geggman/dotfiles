@@ -3,12 +3,15 @@
 
 vim.g.mapleader = ' '
 vim.g.ayucolor = "mirage"
+-- vim.cmd("set background=dark")
 
 local set = vim.o
 
-vim.cmd("colorscheme nightfox")
+vim.g.everforest_enable_italic = 1
+vim.g.everforest_transparent_background = 1
+vim.cmd("colorscheme everforest")
 -- require('colorbuddy').colorscheme("gruvbuddy")
-vim.cmd("highlight Normal guibg=none")
+-- vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true
 set.smartindent = true

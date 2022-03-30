@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/gegg/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/gegg/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["express_line.nvim"] = {
     loaded = true,
     path = "/home/gegg/.local/share/nvim/site/pack/packer/start/express_line.nvim",
