@@ -8,7 +8,7 @@
 export ZSH="/home/$(whoami)/.oh-my-zsh/"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
-export ZSH_THEME="dallas"
+export ZSH_THEME="dpoggi"
 
 
 plugins=(git zsh-syntax-highlighting) 
@@ -70,6 +70,9 @@ alias status='git status'
 alias ssn='sudo shutdown now'
 alias sr='sudo reboot'
 
+# Check win10 vm log
+alias win10log='sudo bat /var/log/libvirt/qemu/win10.log'
+
 # youtube-dl
 alias yta-mp3='youtube-dl --extract-audio --audio-format mp3'
 alias yta-m4a='youtube-dl --extract-audio --audio-format m4a'
@@ -94,7 +97,7 @@ alias cat="bat"
 alias ko="bash ~/.scripts/kickoff.sh"
 
 # shred is more secure
-alias rmshred="shred --remove"
+alias rmshred="shred -uv"
 
 # luamake
 alias luamake=/home/guy/.config/nvim/lua-language-server/3rd/luamake/luamake
@@ -134,6 +137,5 @@ ex ()
 # * Other Stuff *
 # ***************
 
-
-
-
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

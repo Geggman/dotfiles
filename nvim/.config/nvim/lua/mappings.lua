@@ -3,7 +3,6 @@ local opts = {}
 
 -- ESC Sucks
 map('i', 'jk', '<esc>', {})
-map('v', 'jk', '<esc>', {})
 
 -- Keep it centered
 map('n', 'n', 'nzzzv', {})

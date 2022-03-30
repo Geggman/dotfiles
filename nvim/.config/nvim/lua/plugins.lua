@@ -12,6 +12,7 @@ require('packer').startup(function()
   }
 
   -- THEMES
+  use 'sainnhe/everforest'
   use 'ishan9299/modus-theme-vim'
   use 'overcache/NeoSolarized'
   use 'folke/lsp-colors.nvim'

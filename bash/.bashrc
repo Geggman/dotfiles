@@ -130,7 +130,7 @@ RED="\[$(tput setaf 1)\]"
 BLUE="\[$(tput setaf 4)\]"
 RESET="\[$(tput sgr0)\]"
 PS1="$RED[$RESET\u@\h $RED]$RESET \W \$ "
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
 
 
 alias luamake=/home/gegg/dotfiles/lua-language-server/3rd/luamake/luamake
