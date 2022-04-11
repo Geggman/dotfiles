@@ -10,7 +10,10 @@ require('packer').startup(function()
       }
     end
   }
-
+  use {'nvim-orgmode/orgmode', config = function()
+        require('orgmode').setup{}
+  end
+  }
   -- THEMES
   use 'sainnhe/everforest'
   use 'ishan9299/modus-theme-vim'

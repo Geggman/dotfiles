@@ -7,11 +7,11 @@ vim.g.ayucolor = "mirage"
 
 local set = vim.o
 
-vim.g.everforest_enable_italic = 1
-vim.g.everforest_transparent_background = 1
-vim.cmd("colorscheme everforest")
--- require('colorbuddy').colorscheme("gruvbuddy")
--- vim.cmd("highlight Normal guibg=none")
+-- vim.g.everforest_transparent_background = 1
+-- vim.g.everforest_enable_italic = 1
+-- vim.cmd("colorscheme nordfox")
+require('colorbuddy').colorscheme("onebuddy")
+vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true
 set.smartindent = true

@@ -19,6 +19,14 @@ source $ZSH/oh-my-zsh.sh
 # * Aliases *
 # ***********
 
+# Mount encrypted vm drive w/ veracrypt
+alias mnt-things="sudo veracrypt --text /media/data/vms/things /media/things"
+
+# surfshark
+alias sharkdown="sudo surfshark-vpn down" 
+alias sharkstatus="sudo surfshark-vpn status"
+alias sharkvpn="sudo surfshark-vpn"
+
 # tmux aliases
 alias tmux='tmux -2'
 alias tmls="tmux list-sessions"
@@ -74,7 +82,7 @@ alias sr='sudo reboot'
 alias win10log='sudo bat /var/log/libvirt/qemu/win10.log'
 
 # youtube-dl
-alias yta-mp3='youtube-dl --extract-audio --audio-format mp3'
+alias yta-mp3='youtube-dl -x --audio-format mp3'
 alias yta-m4a='youtube-dl --extract-audio --audio-format m4a'
 
 # Switch between shells
