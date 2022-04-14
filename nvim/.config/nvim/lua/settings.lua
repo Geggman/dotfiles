@@ -9,8 +9,8 @@ local set = vim.o
 
 -- vim.g.everforest_transparent_background = 1
 -- vim.g.everforest_enable_italic = 1
--- vim.cmd("colorscheme nordfox")
-require('colorbuddy').colorscheme("onebuddy")
+vim.cmd("colorscheme nordfox")
+-- require('colorbuddy').colorscheme("onebuddy")
 vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true

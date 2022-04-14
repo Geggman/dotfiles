@@ -85,7 +85,6 @@ cd ../..
 ./3rd/luamake/luamake rebuild
 
 # Finish the script
-clear
 echo "$GREEN ALL SET!"
 neofetch
 
