@@ -79,7 +79,7 @@ alias ssn='sudo shutdown now'
 alias sr='sudo reboot'
 
 # Check win10 vm log
-alias win10log='sudo bat /var/log/libvirt/qemu/win10.log'
+alias win10log='sudo bat -p /var/log/libvirt/qemu/win10.log'
 
 # youtube-dl
 alias yta-mp3='youtube-dl -x --audio-format mp3'
@@ -99,7 +99,7 @@ alias fixd='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HD
 alias p3='python3'
 
 # bat cool
-alias cat="bat"
+alias cat="bat -p"
 
 # kickoff.sh
 alias ko="bash ~/.scripts/kickoff.sh"

@@ -9,9 +9,9 @@ local set = vim.o
 
 -- vim.g.everforest_transparent_background = 1
 -- vim.g.everforest_enable_italic = 1
-vim.cmd("colorscheme nordfox")
+vim.cmd("colorscheme ayu")
 -- require('colorbuddy').colorscheme("onebuddy")
-vim.cmd("highlight Normal guibg=none")
+-- vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true
 set.smartindent = true
