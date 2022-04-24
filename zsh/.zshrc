@@ -10,7 +10,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
 export ZSH_THEME="dpoggi"
 
-
 plugins=(git zsh-syntax-highlighting) 
 
 source $ZSH/oh-my-zsh.sh
@@ -18,6 +17,9 @@ source $ZSH/oh-my-zsh.sh
 # ***********
 # * Aliases *
 # ***********
+
+# Doom Emacs
+alias doomsync="~/.emacs.d/bin/doom sync"
 
 # Mount encrypted vm drive w/ veracrypt
 alias mnt-things="sudo veracrypt --text /media/data/vms/things /media/things"

@@ -14,3 +14,12 @@ local on_attach = function(client, bufnr)
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
 
+
+require'lspconfig'.html.setup{
+  conifgurationSection = {"html", "css", "javascript"},
+  embeddedLanguages = {
+    css = true,
+    javascript = true,
+  },
+  provideFormatter = true,
+}
