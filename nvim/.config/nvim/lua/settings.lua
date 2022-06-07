@@ -9,7 +9,7 @@ local set = vim.o
 
 -- vim.g.everforest_transparent_background = 1
 -- vim.g.everforest_enable_italic = 1
-vim.cmd("colorscheme nordfox")
+require('monokai').setup { palette = require('monokai').soda }
 -- require('colorbuddy').colorscheme("onebuddy")
 vim.cmd("highlight Normal guibg=none")
 
