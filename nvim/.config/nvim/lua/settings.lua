@@ -7,11 +7,8 @@ vim.g.ayucolor = "mirage"
 
 local set = vim.o
 
--- vim.g.everforest_transparent_background = 1
--- vim.g.everforest_enable_italic = 1
-require('monokai').setup { palette = require('monokai').soda }
--- require('colorbuddy').colorscheme("onebuddy")
-vim.cmd("highlight Normal guibg=none")
+-- require('monokai').setup { palette = require('monokai').soda }
+vim.cmd("colorscheme challenger_deep")
 
 set.expandtab = true
 set.smartindent = true
@@ -30,4 +27,3 @@ set.wrap = false
 set.scrolloff = 8
 set.syntax = 'on'
 vim.cmd(":set clipboard=unnamedplus")
-

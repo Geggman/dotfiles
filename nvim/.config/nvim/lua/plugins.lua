@@ -45,13 +45,13 @@ require('packer').startup(function()
 
   -- LSP
   use "folke/lua-dev.nvim"
-  use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-  use 'williamboman/nvim-lsp-installer'
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"
 
   -- OTHER
   use {
@@ -63,8 +63,6 @@ require('packer').startup(function()
   use 'tjdevries/express_line.nvim'
   use 'numToStr/Comment.nvim'
   use 'sbdchd/neoformat'
-
-
 
 
   -- LUAROCKS

@@ -59,9 +59,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id dmenu_run -l 20 -fn "Source Code Pro"
+bindsym $mod+d exec --no-startup-id dmenu_run -l 20 -fn "Source Code Pro" 
 
-bindsym $mod+d exec --no-startup-id rofi -show run
 
 # **************
 # * NAVIGATION *
@@ -190,8 +189,8 @@ set $transparent #00000000
 # finds out, if available)
 bar { 
       position top
-     font pango:Mononoki Nerd Font 13
-	 status_command /home/gegg/bumblebee-status/bumblebee-status \
+     font pango:Mononoki Nerd Font 10
+	 status_command /home/gegg/bumblebee-status/bumblebee-status -t iceberg-rainbow \
         -m cpu uptime nic \
         pasink time date -p time.format="%H:%M" 
     #colors {
@@ -211,9 +210,10 @@ bar {
 # * AUTOSTART *
 # *************
 
-exec_always ~/.scritps/pastart.sh
+# exec_always ~/.scripts/pastart.sh
 exec_always nitrogen --restore
 exec_always "setxkbmap -model pc104 -layout us,il -variant ,, -option grp:alt_shift_toggle"
+exec_always "xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HDMI-0"
 #exec --no-startup-id picom -CGb --config ~/.config/picom/picom.conf
 bindsym --release $mod+p exec passmenu
 for_window [class=".*"] border pixel 1
