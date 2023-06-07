@@ -8,7 +8,7 @@ vim.g.ayucolor = "mirage"
 local set = vim.o
 
 -- require('monokai').setup { palette = require('monokai').soda }
-vim.cmd("colorscheme challenger_deep")
+vim.cmd("colorscheme NeoSolarized")
 
 set.expandtab = true
 set.smartindent = true
