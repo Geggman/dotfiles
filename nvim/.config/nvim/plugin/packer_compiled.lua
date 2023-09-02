@@ -279,6 +279,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/guy/.local/share/nvim/site/pack/packer/start/vim-startify",
     url = "https://github.com/mhinz/vim-startify"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/guy/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 

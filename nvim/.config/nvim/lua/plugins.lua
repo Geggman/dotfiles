@@ -52,6 +52,7 @@ require('packer').startup(function()
   use 'hrsh7th/nvim-cmp'
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
+  use "hrsh7th/vim-vsnip"
 
   -- OTHER
   use {

@@ -3,11 +3,12 @@
 
 vim.g.mapleader = ' '
 vim.g.ayucolor = "mirage"
--- vim.cmd("set background=dark")
 
 local set = vim.o
 
 -- require('monokai').setup { palette = require('monokai').soda }
+
+
 vim.cmd("colorscheme NeoSolarized")
 
 set.expandtab = true
