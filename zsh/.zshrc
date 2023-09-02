@@ -145,7 +145,7 @@ ex ()
 startssh()
 {
   eval `ssh-agent -s` 
-  ssh-add ~/.ssh/HomePC 
+  ssh-add ~/.ssh/tmp
 }
 
 # ***************
