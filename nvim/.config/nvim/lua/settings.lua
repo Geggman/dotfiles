@@ -3,12 +3,12 @@
 
 vim.g.mapleader = ' '
 vim.g.ayucolor = "mirage"
--- vim.cmd("set background=dark")
 
 local set = vim.o
 
 -- require('monokai').setup { palette = require('monokai').soda }
-vim.cmd("colorscheme challenger_deep")
+vim.cmd("colorscheme nordfox")
+vim.cmd("highlight Normal guibg=none")
 
 set.expandtab = true
 set.smartindent = true

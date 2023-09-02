@@ -8,7 +8,7 @@
 export ZSH="/home/$(whoami)/.oh-my-zsh/"
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
-export ZSH_THEME="dpoggi"
+export ZSH_THEME="af-magic"
 
 plugins=(git zsh-syntax-highlighting) 
 

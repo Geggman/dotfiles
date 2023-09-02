@@ -1,12 +1,5 @@
-# The .zshrc of Guy Levitzky
-# Github: GuyLevitzky
-
-#  ==========    ||
-# ||             ||
-# ||  =========  ||
-# ||         ||  ||
-#   ==========    =========
-
+# The .zshrc of Guy Levitski
+# Github: guylev38
 
 
 export EDITOR="nvim"
@@ -18,9 +11,6 @@ export EDITOR="nvim"
 # * Aliases *
 # ***********
 
-# Git bare repo for my dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-
 # Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -28,18 +18,8 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
-# Navigate to Projects folder
-alias Projects='cd ~/Projects/'
-
 # vim
 alias vim=nvim
-
-# Pacman and Yay
-alias pacs='sudo pacman -S'
-alias pacr='sudo pacman -R'
-alias pacsyu='sudo pacman -Syyu'
-alias yaysua='yay -Sua --noconfirm'
-alias yaysyu='yay -Syu --noconfirm'
 
 # 'ls' is 'exa' now
 alias ls='exa -al --color=always --group-directories-first'
@@ -73,10 +53,8 @@ alias yta-m4a='youtube-dl --extract-audio --audio-format m4a'
 # Switch between shells
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
-alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
 # Source .zshrc or .bashrc
-
 alias szsh="source /home/guy/.zshrc"
 alias sbash="source /home/guy/.bashrc"
 
@@ -124,6 +102,12 @@ ex ()
   fi
 }
 
+# Start ssh-agent
+startssh()
+{
+  eval `ssh-agent -s` 
+  ssh-add ~/.ssh/HomePC 
+}
 
 ## Prompt ###
 RED="\[$(tput setaf 1)\]"
