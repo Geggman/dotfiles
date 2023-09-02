@@ -145,12 +145,8 @@ ex ()
 # Start ssh-agent
 startssh()
 {
-  eval `ssh-agent -s` 
-<<<<<<< HEAD
-  ssh-add ~/.ssh/tmp
-=======
   ssh-add ~/.ssh/HomeWSL 
->>>>>>> 4d402e85cb6144da0704a2719a1302ef3c152279
+
 }
 
 # ***************
