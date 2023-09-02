@@ -7,8 +7,12 @@ vim.g.ayucolor = "mirage"
 local set = vim.o
 
 -- require('monokai').setup { palette = require('monokai').soda }
+<<<<<<< HEAD
 vim.cmd("colorscheme nordfox")
 vim.cmd("highlight Normal guibg=none")
+=======
+vim.cmd("colorscheme NeoSolarized")
+>>>>>>> 4d402e85cb6144da0704a2719a1302ef3c152279
 
 set.expandtab = true
 set.smartindent = true

@@ -70,11 +70,12 @@ alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
 alias checkout='git checkout'
-alias commit='git commit -m'
+alias commit='git commit -a -m' 
 alias fetch='git fetch'
 alias pull='git pull origin'
 alias push='git push origin'
 alias status='git status'
+alias delete-branch="git branch -D"
 
 # Shutdown/Reboot
 alias ssn='sudo shutdown now'
@@ -101,7 +102,7 @@ alias fixd='xrandr --output DP-1 --left-of HDMI-0 --output DVI-D-0 --right-of HD
 alias p3='python3'
 
 # bat cool
-alias cat="bat -p"
+# alias cat="bat -p"
 
 # kickoff.sh
 alias ko="bash ~/.scripts/kickoff.sh"
@@ -145,7 +146,11 @@ ex ()
 startssh()
 {
   eval `ssh-agent -s` 
+<<<<<<< HEAD
   ssh-add ~/.ssh/tmp
+=======
+  ssh-add ~/.ssh/HomeWSL 
+>>>>>>> 4d402e85cb6144da0704a2719a1302ef3c152279
 }
 
 # ***************
